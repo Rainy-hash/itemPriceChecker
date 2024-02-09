@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New PHP Page</title>
 </head>
-
 <body>
     <form action="index.php" method="get">
         <label>Please select an amount: </label><br>
@@ -17,7 +15,7 @@
 <?php
 //$item and $price can be changed to whatever you like 
 //The isset checks if "quantity" has been submitted through the form, which it has, so it wont show any warnings regarding it
-$item = "Items";
+$item = "Item";
 $price = 2.99;
 $quantity = isset($_GET["quantity"]) ? $_GET["quantity"] : null;
 
